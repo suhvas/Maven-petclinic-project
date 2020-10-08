@@ -390,6 +390,21 @@
             </plugin>
         </plugins>
     </build>
+    <distributionManagement>
+        <repository>
+            <id>releases</id>
+            <!-- CHANGE HERE by your team nexus server -->
+            <url>http://54.237.52.219:8081/repository/Release/</url>
+            <!--<url>http://54.237.52.219:8081/nexus/content/repositories/releases/</url> -->
+            <!-- http://54.237.52.219:8081/repository/Release/ -->
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <!-- CHANGE HERE by your team nexus server -->
+            <!-- <url>http://54.237.52.219:8081/nexus/content/repositories/snapshots/</url> -->
+            <url>http://54.237.52.219:8081/repository/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
     <reporting>
         <plugins>
 
